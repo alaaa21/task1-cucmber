@@ -33,7 +33,7 @@ public class OpenPage {
     public void FirstUser() {
         driver.navigate().to("https://www.saucedemo.com/");
         login.usernamePOM(driver).sendKeys();
-        login.passwordPOM(driver).sendKeys();
+        login.passwordPOM(driver).sendKeys("secret_sauce");
         login.LoginBtnPOM(driver).click();
 
     }

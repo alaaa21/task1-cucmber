@@ -15,7 +15,7 @@ public class SecondUser {
     public void User2() {
         driver.navigate().to("https://www.saucedemo.com/");
         login2.usernamePOM(driver).sendKeys();
-        login2.passwordPOM(driver).sendKeys();
+        login2.passwordPOM(driver).sendKeys("secret_sauce");
         login2.LoginBtnPOM(driver).click();
     }
     @Then("the user cant login")
